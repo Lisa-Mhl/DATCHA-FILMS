@@ -47,9 +47,9 @@
 
     <footer class="footer">
         <div id="left">
-            <a href="index.php#accueil" class="">A propos</a><br />
+            <a href="home.php#accueil" class="">A propos</a><br />
             <a href="catalogue.php" class="">Catalogue</a><br />
-            <a href="index.php#actu" class="">Actualités</a>
+            <a href="home.php#actu" class="">Actualités</a>
         </div>
 
         <div id="adresse">

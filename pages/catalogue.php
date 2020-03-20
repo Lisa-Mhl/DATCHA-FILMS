@@ -119,8 +119,8 @@
 
     <footer class="footer">
         <div id="left">
-            <a href="index.php#accueil">A propos</a><br />
-            <a href="index.php#actu">Actualités</a><br />
+            <a href="home.php#accueil">A propos</a><br />
+            <a href="home.php#actu">Actualités</a><br />
             <a href="contact.php">Contact</a>
         </div>
 
