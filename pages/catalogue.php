@@ -1,8 +1,8 @@
-<?php include('head.php'); ?>
+<?php include('../layouts/head.php'); ?>
 
     <section class="cover">
 
-    <?php include('nav.php'); ?>
+    <?php include('../layouts/nav.php'); ?>
 
         <div class="projets">
             <a href=#Politique>
