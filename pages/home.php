@@ -12,7 +12,7 @@
 
     <div class="video-container">
       <div class="color-overlay"></div>
-      <video autoplay loop muted poster="poster.png">
+      <video autoplay loop muted>
         <source src="asets/cover.mp4" type="video/mp4">
         <!--Ajouter autres formats vidéo-->
       </video>
@@ -32,7 +32,7 @@
           de
           nouvelle collection, films axés sur le savoir-faire de marque, vidéos d’entreprise... Datcha Films explore
           différentes formes cinématographiques pour vous permettre de mettre en valeur l’univers de votre
-          marque. <span class="text">Découvrez nos projets ici : <a href="pages/catalogue.php"></span><img
+          marque. <span class="text">Découvrez nos projets ici : <a href="catalogue.php"></span><img
             src="asets/img/icone cam.png"></a></p>
       </article>
     </section>
