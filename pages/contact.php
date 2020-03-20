@@ -7,7 +7,7 @@
         <div class="video-container">
             <div class="color-overlay"></div>
             <video autoplay loop muted>
-                <source src="asets/contact.mp4" type="video/mp4">
+                <source src="../asets/contact.mp4" type="video/mp4">
                 <!--Ajouter autres formats vidéo-->
             </video>
         </div>
@@ -60,10 +60,10 @@
 
         <div id="footerlogo">
             <a href="https://www.instagram.com/datchafilms/" target="blank" class="IG"><img
-                    src="asets/img/logo-instagram.png" alt="Logo Instagram"></a><br />
+                    src="../asets/img/logo-instagram.png" alt="Logo Instagram"></a><br />
             <!--LIEN A INSERER--><a href="" class="FB" target="blank"><img
-                    src="asets/img/facebook-icone-CmonSite.png"></a><br />
-            <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="asets/img/viméo.png"></a>
+                    src="../asets/img/facebook-icone-CmonSite.png"></a><br />
+            <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="../asets/img/viméo.png"></a>
         </div>
 
     </footer>

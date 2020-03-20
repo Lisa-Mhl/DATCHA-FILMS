@@ -6,19 +6,19 @@
 
         <div class="projets">
             <a href=#Politique>
-                <h3>Corpo</h3><img src="asets/img/corpo.png" alt="Icone Corpo">
+                <h3>Corpo</h3><img src="../asets/img/corpo.png" alt="Icone Corpo">
             </a>
             <a href="#Docu">
-                <h3>Docu</h3><img src="asets/img/docu.png" alt="Icone Documentaires">
+                <h3>Docu</h3><img src="../asets/img/docu.png" alt="Icone Documentaires">
             </a>
 
             <a href="#Lifestyle">
-                <h3>Fashion</h3><img src="asets/img/fashion.png" alt="Icone Fashion">
+                <h3>Fashion</h3><img src="../asets/img/fashion.png" alt="Icone Fashion">
             </a>
         </div>
 
         <div class="cover-container">
-            <img src="asets/img/cover-2.png">
+            <img src="../asets/img/cover-2.png">
         </div>
 
     </section>
@@ -132,10 +132,10 @@
 
         <div id="footerlogo">
             <a href="https://www.instagram.com/datchafilms/" target="blank" class="IG"><img
-                    src="asets/img/logo-instagram.png" alt="Logo Instagram"></a><br />
+                    src="../asets/img/logo-instagram.png" alt="Logo Instagram"></a><br />
             <!--LIEN A INSERER--><a href="" class="FB" target="blank"><img
-                    src="asets/img/facebook-icone-CmonSite.png"></a><br />
-            <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="asets/img/viméo.png"></a>
+                    src="../asets/img/facebook-icone-CmonSite.png"></a><br />
+            <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="../asets/img/viméo.png"></a>
         </div>
 
     </footer>
