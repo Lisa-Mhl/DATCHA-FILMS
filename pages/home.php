@@ -33,7 +33,7 @@
           nouvelle collection, films axés sur le savoir-faire de marque, vidéos d’entreprise... Datcha Films explore
           différentes formes cinématographiques pour vous permettre de mettre en valeur l’univers de votre
           marque. <span class="text">Découvrez nos projets ici : <a href="catalogue.php"></span><img
-            src="../assets/img/icone cam.png"></a></p>
+            src="https://i.postimg.cc/QM5QMCRq/icone-cam.png"></a></p>
       </article>
     </section>
 
@@ -68,7 +68,7 @@
         <li>
           <a href="https://www.festivalnikon.fr/video/2019/639?lang=fr" target="blank">
             <h5>NIKON FILM FESTIVAL</h5><img
-              src="../assets/img/nikon-film-festival-10-eme-edition-je-suis-une-generation-1.jpg"
+              src="https://i.postimg.cc/FzKk0Hn8/nikon-film-festival-10-eme-edition-je-suis-une-generation-1.jpg"
               alt="Affiche Nikon Festival">
           </a><span>"Je suis paumé.e"</span>Un film de Laure Lioret, Diane Uzan & Benoit Crou. <br /> Avec Stéphane
           Chevreul, Elsa
@@ -77,7 +77,7 @@
         <li>
           <a href="https://www.festivalnikon.fr/video/2019/639?lang=fr" target="blank">
             <h5>NIKON FILM FESTIVAL</h5><img
-              src="../assets/img/nikon-film-festival-10-eme-edition-je-suis-une-generation-1.jpg"
+              src="https://i.postimg.cc/FzKk0Hn8/nikon-film-festival-10-eme-edition-je-suis-une-generation-1.jpg"
               alt="Affiche Nikon Festival">
           </a><span>"Je suis paumé.e"</span>Un film de Laure Lioret, Diane Uzan & Benoit Crou. <br /> Avec Stéphane
           Chevreul, Elsa
@@ -86,7 +86,7 @@
         <li>
           <a href="https://www.festivalnikon.fr/video/2019/639?lang=fr" target="blank">
             <h5>NIKON FILM FESTIVAL</h5><img
-              src="../assets/img/nikon-film-festival-10-eme-edition-je-suis-une-generation-1.jpg"
+              src="https://i.postimg.cc/FzKk0Hn8/nikon-film-festival-10-eme-edition-je-suis-une-generation-1.jpg"
               alt="Affiche Nikon Festival">
           </a><span>"Je suis paumé.e"</span>Un film de Laure Lioret, Diane Uzan & Benoit Crou. <br /> Avec Stéphane
           Chevreul, Elsa
@@ -112,11 +112,11 @@
 
 
     <div id="footerlogo">
-      <a href="https://www.instagram.com/datchafilms/" target="blank" class="IG"><img src="../assets/img/logo-instagram.png"
+      <a href="https://www.instagram.com/datchafilms/" target="blank" class="IG"><img src="https://i.postimg.cc/wxcdmkhC/logo-instagram.png"
           alt="Logo Instagram"></a><br />
       <!--LIEN A INSERER--><a href="" class="FB" target="blank"><img
-          src="../assets/img/facebook-icone-CmonSite.png"></a><br />
-      <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="../assets/img/viméo.png"></a>
+          src="https://i.postimg.cc/LXtGjHZt/facebook-icone-Cmon-Site.png"></a><br />
+      <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="https://i.postimg.cc/K83qnZ61/vim-o.png"></a>
     </div>
 
   </footer>

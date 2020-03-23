@@ -5,15 +5,15 @@
     <?php include('../layouts/nav.php'); ?>
 
         <div class="projets">
-            <a href=#Politique>
-                <h3>Corpo</h3><img src="../assets/img/corpo.png" alt="Icone Corpo">
+            <a href=#Corpo>
+                <h3>Corpo</h3><img src="https://i.postimg.cc/0QjJwN43/corpo.png" alt="Icone Corpo">  <!--ICONE A REMPLACER PAR CREA DATCHA-->
             </a>
             <a href="#Docu">
-                <h3>Docu</h3><img src="../assets/img/docu.png" alt="Icone Documentaires">
+                <h3>Docu</h3><img src="https://i.postimg.cc/y8TPhkfY/docu.png" alt="Icone Documentaires"> <!--ICONE A REMPLACER PAR CREA DATCHA-->
             </a>
 
             <a href="#Lifestyle">
-                <h3>Fashion</h3><img src="../assets/img/fashion.png" alt="Icone Fashion">
+                <h3>Fashion</h3><img src="https://i.postimg.cc/9F5tvGKQ/fashion.png" alt="Icone Fashion"> <!--ICONE A REMPLACER PAR CREA DATCHA-->
             </a>
         </div>
 
@@ -45,7 +45,7 @@
             </div>
 
         </section>
-        <section id="Politique">
+        <section id="Corpo">
             <h4>FILMS INSTITUTIONNELS</h4>
             <div class="demo">
                 <iframe src="https://player.vimeo.com/video/321215672" frameborder="0" allow="autoplay; fullscreen"
@@ -132,10 +132,10 @@
 
         <div id="footerlogo">
             <a href="https://www.instagram.com/datchafilms/" target="blank" class="IG"><img
-                    src="../assets/img/logo-instagram.png" alt="Logo Instagram"></a><br />
+                    src="https://i.postimg.cc/wxcdmkhC/logo-instagram.png" alt="Logo Instagram"></a><br />
             <!--LIEN A INSERER--><a href="" class="FB" target="blank"><img
-                    src="../assets/img/facebook-icone-CmonSite.png"></a><br />
-            <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="../assets/img/viméo.png"></a>
+                    src="https://i.postimg.cc/LXtGjHZt/facebook-icone-Cmon-Site.png"></a><br />
+            <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="https://i.postimg.cc/K83qnZ61/vim-o.png"></a>
         </div>
 
     </footer>

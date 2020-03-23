@@ -36,9 +36,30 @@
 
         }
         ?>
+        
 
             <div class="contact">
                 <h2 class="titre" id="Contact">&#201crivez-Nous</h2>
+
+                <?php
+                   if(isset($_POST['envoyer'])){
+                ?>
+                   <p class="lead">
+                       <?php
+                       $to = "michellisa.75@gmail.com"; // A MODIFIER AVEC ADRESSE DATCHA
+                       $from = "lilouuuups@gmail.com"; // A MODIFIER AVEC ADRESSE DATCHA
+                       $message = $_POST['message'];
+                       $objet = $_POST['objet'];
+                       $nom = $_POST['nom'];
+                       $email = $_POST['email'];
+                       $subject = "Nouveau message sur Datchafilms.com";
+                       $content =
+                       "Ce message vous a été envoyé par :" .$nom." ".$email." ".$message;           
+                       $headers = "From:" .$from;
+                       mail($to, $subject, $content, $headers);
+                       echo "Merci pour votre message"." ".$_POST['nom']." "."!"." " ."Nous vous répondrons dans les plus brefs délais";
+                       } 
+                   ?>
 
                 <form method="POST" action="contact.php">
                     <div class="container">
@@ -88,25 +109,7 @@
 
                     </div>
                 </form>
-                <?php
-                   if(isset($_POST['envoyer'])){
-                ?>
-                   <p class="lead">
-                       <?php
-                       $to = "michellisa.75@gmail.com"; // A MODIFIER AVEC ADRESSE DATCHA
-                       $from = "lilouuuups@gmail.com"; // A MODIFIER AVEC ADRESSE DATCHA
-                       $message = $_POST['message'];
-                       $objet = $_POST['objet'];
-                       $nom = $_POST['nom'];
-                       $email = $_POST['email'];
-                       $subject = "Nouveau message sur Datchafilms.com";
-                       $content =
-                       "Ce message vous a été envoyé par :" .$nom." ".$email." ".$message;           
-                       $headers = "From:" .$from;
-                       mail($to, $subject, $content, $headers);
-                       echo "Merci pour votre message"." ".$_POST['nom']." "."!"." " ."Nous vous répondrons dans les plus brefs délais";
-                       } 
-                   ?>
+              
 
             </div>
         </main>
@@ -127,10 +130,10 @@
 
         <div id="footerlogo">
             <a href="https://www.instagram.com/datchafilms/" target="blank" class="IG"><img
-                    src="../assets/img/logo-instagram.png" alt="Logo Instagram"></a><br />
+                    src="https://i.postimg.cc/wxcdmkhC/logo-instagram.png" alt="Logo Instagram"></a><br />
             <!--LIEN A INSERER--><a href="" class="FB" target="blank"><img
-                    src="../assets/img/facebook-icone-CmonSite.png"></a><br />
-            <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="../assets/img/viméo.png"></a>
+                    src="https://i.postimg.cc/LXtGjHZt/facebook-icone-Cmon-Site.png"></a><br />
+            <a href="https://vimeo.com/user89486657" target="blank" class="VM"><img src="https://i.postimg.cc/K83qnZ61/vim-o.png"></a>
         </div>
 
     </footer>
