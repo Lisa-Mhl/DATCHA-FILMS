@@ -544,7 +544,8 @@
          input, textarea{
          font-size: 1em;
          width:100%;
-         margin:0.3em
+         margin:0.3em;
+         border-radius: 10px;
         }  
   
          .option{
@@ -555,6 +556,25 @@
 
          #selection{
            font-size: medium;
+           border-radius: 10px;
+         }
+
+         .erreur{
+          text-align: left;
+          padding: 0px;
+          margin: 0px;
+          color:white;
+          font-weight: bold;
+         }
+          
+         .lead{
+           font-size: 2em;
+           background-color: white;
+           opacity: 40% ;
+           padding : 0px;
+           margin: 0px;
+         }
+
          }
    
 

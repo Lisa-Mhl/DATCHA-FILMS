@@ -10,7 +10,7 @@
   <meta name="author" content="Lisa Michel">
   <link rel="stylesheet" href="layouts/style.css">
   <link rel="stylesheet" href="../layouts/style.css">
-  <link rel="stylesheet" href="style.css">
+
   <link
     href="https://fonts.google.com/specimen/Noto+Serif?fbclid=IwAR1-gyOdZtTJCGbG55kxxllKqaYbg_FVbwWbAVCIRkhhrDtosVRtOOmFD0M&selection.family=Noto+Serif"
     rel="stylesheet">
