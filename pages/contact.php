@@ -15,34 +15,51 @@
         <main>
 
         <?php 
-          if(isset($_POST)){
-              $erreurs = [];
-            
-            if(empty($_POST['email'])){
-                $erreurs['email'] = "*";
-            }
-            if(empty($_POST['message'||'email'||'nom'||'objet'])){
-                $erreurs['message'||'email'||'nom'||'objet'] = "* Tous les champs sont obligatoires";
-            }
-            if(empty($_POST['nom'])){
-                $erreurs['nom'] = "*";
-            }
-            if(empty($_POST['objet'])){
-                $erreurs['objet'] = "*";
-            }
-            if(empty($_POST['message'])){
-                $erreurs['message'] = "*";
-            }
+          if($_POST){
+              
+              $erreurs = array();
 
+              if(empty($_POST['email'])){
+                  $erreurs['email'] = "*";
+            }
+              if(empty($_POST['nom'])){
+                  $erreurs['nom'] = "*";
+            }
+              if(strlen($_POST['nom']) <=1){
+                  $erreurs['nom2'] = "Votre nom doit contenir plus d'un caractère";
+            }
+              if(empty($_POST['objet'])){
+                  $erreurs['objet'] = "*";
+            }
+              if(strlen($_POST['objet']) <=1){
+                  $erreurs['objet2'] = "L'objet de votre demande doit contenir plus d'un caractère";
+            }
+              if(empty($_POST['message'])){
+                  $erreurs['message'] = "*";
+            }
+              if(strlen($_POST['message']) <=1){
+                  $erreurs['message2'] = "Votre message doit contenir plus d'un caractère";
+            }
         }
         ?>
         
-
             <div class="contact">
                 <h2 class="titre" id="Contact">&#201crivez-Nous</h2>
 
+                <p class="lead"><?php
+                    if($_POST){
+                        if(count($erreurs)==0){
+                            echo "Merci pour votre message"." ".$_POST['nom']." "."!"." " ."Nous vous répondrons dans les plus brefs délais";
+                        }else{
+                            echo "* Tous les champs sont obligatoires !";
+                           }
+                        }
+                ?></p>
                 <?php
                    if(isset($_POST['envoyer'])){
+                       if(count($erreurs)==0){
+                           
+                      }
                 ?>
                    <p class="lead">
                        <?php
@@ -56,51 +73,43 @@
                        $content =
                        "Ce message vous a été envoyé par :" .$nom." ".$email." ".$message;           
                        $headers = "From:" .$from;
-                       mail($to, $subject, $content, $headers);
-                       echo "Merci pour votre message"." ".$_POST['nom']." "."!"." " ."Nous vous répondrons dans les plus brefs délais";
+                       mail($to, $subject, $content, $headers); 
                        } 
                    ?>
 
-                <form method="POST" action="contact.php">
+                <form method="POST">
                     <div class="container">
 
                         <div class="option">
                             <label for="selection">Vous êtes :</label>
-                            <select name="choix" id="selection" required>
+                            <select name="choix" id="selection" required value=<?php if(isset($_POST['choix'])) echo $_POST['choix']?>>
                                 <option value="">-- Sélectionnez une option --</option>
-                                <option value="entreprise" name="entreprise">Une entreprise</option>
-                                <option value="particulier" name="particulier">Un particulier</option>
+                                <option value="entreprise"<?php if (isset($_POST['choix']) && $_POST['choix']== "entreprise") echo "selected"?>>Une entreprise</option>
+                                <option value="particulier"<?php if (isset($_POST['choix']) && $_POST['choix']== "particulier") echo "selected"?>>Un particulier</option>
                             </select>
                         </div>
 
-                        <div class="formulaire">
                         <p class="erreur">
 
-                            <code>
+                           
                                 <?php if(isset($erreurs['email'])) echo $erreurs['email']; ?>
-                            </code>
                             <input type="email" placeholder="Email"  name ="email" value=<?php if(isset($_POST['email'])) echo $_POST['email']?>>
                            
-                            <code>
+
                                 <?php if(isset($erreurs['nom'])) echo $erreurs['nom']; ?>
-                            </code>
                             <input type="text" placeholder="Nom / Société"  name="nom" value=<?php if(isset($_POST['nom'])) echo $_POST['nom']?>>
-                            <p class="erreur">
+                            <p class="erreur"><?php if(isset($erreurs['nom2'])) echo $erreurs['nom2']; ?></p>
+
                            
-                            <code>
-                                <?php if(isset($erreurs['objet'])) echo $erreurs['objet']; ?>
-                            </code>
+                            <p class="erreur"><?php if(isset($erreurs['objet'])) echo $erreurs['objet']; ?></p>
                             <input type="text" placeholder="Objet" name='objet' value=<?php if(isset($_POST['objet'])) echo $_POST['objet']?>>
-                            <p class="erreur">
+                            <p class="erreur"><?php if(isset($erreurs['objet2'])) echo $erreurs['objet2']; ?></p>
                             
-                            <code>
-                                <?php if(isset($erreurs['message'])) echo $erreurs['message']; ?>
-                            </code>
-                            <textarea placeholder="Message" rows="10"  name="message"></textarea>
-                            <p class="erreur">
-                            <code>
-                                <?php if(isset($erreurs['message'||'email'||'nom'||'objet'])) echo $erreurs['message'||'email'||'nom'||'objet']; ?>
-                            </code>
+                            
+                            <p class="erreur"><?php if(isset($erreurs['message'])) echo $erreurs['message']; ?></p>
+                            <textarea placeholder="Message" rows="10"  name="message"><?php if(isset($_POST['message'])) echo $_POST['message']?></textarea>
+                            <p class="erreur"><?php if(isset($erreurs['message2'])) echo $erreurs['message2']; ?></p>
+                            <p class="erreur"><?php if(isset($erreurs['message'||'email'||'nom'||'objet'])) echo $erreurs['message'||'email'||'nom'||'objet']; ?></p>
                         </div>
 
                         <div class="send">
@@ -108,8 +117,7 @@
                         </div>
 
                     </div>
-                </form>
-              
+                </form>          
 
             </div>
         </main>
@@ -126,7 +134,6 @@
             <p>Datcha Films : 14 rue des platrières 75020 - PARIS</p>
             <p>Tel : 01 56 56 47 89</p>
         </div>
-
 
         <div id="footerlogo">
             <a href="https://www.instagram.com/datchafilms/" target="blank" class="IG"><img
