@@ -1,6 +1,5 @@
 <?php include('../layouts/head.php'); ?>
 
-
   <section class="cover">
 
   <?php include('../layouts/nav.php'); ?>
@@ -33,7 +32,7 @@
           de
           nouvelle collection, films axés sur le savoir-faire de marque, vidéos d’entreprise... Datcha Films explore
           différentes formes cinématographiques pour vous permettre de mettre en valeur l’univers de votre
-          marque. <span class="text">Découvrez nos projets ici : <a href="catalogue.php"></span><img
+          marque. <span class="text">Découvrez nos projets ici : <a href="login.php"></span><img
             src="https://i.postimg.cc/QM5QMCRq/icone-cam.png"></a></p>
       </article>
     </section>
@@ -102,7 +101,7 @@
   <footer class="footer">
     <div id="left">
       <a href="#accueil" class="">A propos</a><br />
-      <a href="catalogue.php" class="">Catalogue</a><br />
+      <a href="login.php" class="">Catalogue</a><br />
       <a href="contact.php" class="">Contact</a>
     </div>
 

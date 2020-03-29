@@ -55,6 +55,7 @@
                            }
                         }
                 ?></p>
+             
                 <?php
                    if(isset($_POST['envoyer'])){
                        if(count($erreurs)==0){
@@ -126,7 +127,7 @@
     <footer class="footer">
         <div id="left">
             <a href="home.php#accueil" class="">A propos</a><br />
-            <a href="catalogue.php" class="">Catalogue</a><br />
+            <a href="login.php" class="">Catalogue</a><br />
             <a href="home.php#actu" class="">Actualités</a>
         </div>
 
